@@ -50,6 +50,7 @@ h1,h2{
 		background-color: rgba(48,89,199,1.00);
 		/*position*/
 		position: sticky;
+	    z-index: 1;
 		top: 0;
 		/*padding*/
 		padding: 10px 30px;	
