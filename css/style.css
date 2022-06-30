@@ -1,208 +1,170 @@
-@charset "utf-8";
-/* CSS Document */
-@import url('https://fonts.googleapis.com/css2?family=Great+Vibes&family=Koulen&family=Marck+Script&display=swap');
-*{
-	font-family: 'Marck';
-	margin: 0;
-	padding: 0;
+@import url("https://fonts.googleapis.com/css2?family=Great+Vibes&family=Koulen&family=Marck+Script&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Great+Vibes&family=Koulen&family=Marck+Script&display=swap");
+.encabezado div nav {
+  background-color: rgb(48, 89, 199);
+  position: sticky;
+  z-index: 1;
+  top: 0;
+  padding: 10px 30px;
+  display: flex;
+  flex: justify-content end;
 }
-html{
-	font-size: 90%;
+.encabezado div nav ul li {
+  display: inline;
+  list-style: none;
+  margin-right: 20px;
 }
-body{
-	background-image: url("../Yamil/Fondo/Fondo.png");
-	background-position: center;
-	background-repeat: no-repeat;
-	background-attachment: fixed;
+.encabezado div nav ul li a {
+  font-family: "Great Vibes", cursive;
+  font-size: 2.5rem;
+  text-decoration: none;
+  color: #A2A611;
 }
-h1,h2{
-	color: gray;
-	font-family: 'Marck Script', cursive;
-}
-.contenedor{
-	display: grid;
-	grid-template-columns: 2fr;
-	grid-template-rows: auto;
-	grid-template-areas: 
-	"nav" 
-	"header" 
-	"productos" 
-	"footer";
-
+.encabezado div nav ul li a:hover {
+  color: black;
+  font-weight: 600;
 }
 
-
-#header{
-	grid-area: header;
+.pie {
+  background-color: rgb(37, 78, 133);
+  padding: 30px;
+  font-family: "Great Vibes", cursive;
+}
+.pie .pie__icon--sm {
+  width: 30px;
+}
+.pie .pie__icon--sm .pie__titulo--md h2 {
+  font-size: 3rem;
+  text-decoration: none;
 }
 
-
-#productos{
-	grid-area: productos;
+* {
+  margin: 0;
+  padding: 0;
 }
 
-#footer{
-	grid-area: footer;
+html {
+  font-size: 90%;
 }
 
-
-.encabezado div nav{
-		background-color: rgba(48,89,199,1.00);
-		/*position*/
-		position: sticky;
-	    z-index: 1;
-		top: 0;
-		/*padding*/
-		padding: 10px 30px;	
-	 	display: flex;
-	 	flex-wrap:wrap
-	}
-
-	.encabezado nav ul{
-		/*display flex*/
-	
-	
-	
-		
-	}
-
-	.encabezado nav ul li{
-		display: inline; 
-		list-style: none;
-		margin-right: 20px;
-	}
-
-	.encabezado nav ul li a{
-			font-size: 2rem;
-			text-decoration: none;
-			color: #A2A611
-		}
-		.encabezado nav ul li a:hover{
-			color: black;
-			font-weight: 600;
-		}			
-.pie{
-	/*padding*/
-	padding:30px;
-	/*display flex*/
-	
+body {
+  background-image: url("../Yamil/Fondo/Fondo.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
 }
 
-.pie__icon--sm{
-	/*size*/
-	width: 30px;
+h1, h2 {
+  color: rgb(16, 22, 53);
+  font-family: "Marck Script", cursive;
 }
 
-.pie__titulo--md{
-	/*display*/
-	font-size: 2rem;
+.contenedor {
+  display: grid;
+  grid-template-columns: 2fr;
+  grid-template-rows: auto;
+  grid-template-areas: "nav" "header" "productos" "footer";
+}
+
+#header {
+  grid-area: header;
+}
+
+#productos {
+  grid-area: productos;
+}
+
+#footer {
+  grid-area: footer;
 }
 
 #productos h1,
-#productos h2{
-	text-transform: uppercase;
-	font-size: 3rem;
-	text-align: center;
-	padding: 20px 0;
-	background-color: rgba(204,187,30,1.00);
-	font-family: 'Koulen', cursive;
-	margin: 20px 0;
+#productos h2 {
+  text-transform: uppercase;
+  font-size: 3rem;
+  text-align: center;
+  padding: 20px 0;
+  background-color: rgb(204, 187, 30);
+  font-family: "Koulen", cursive;
+  margin: 20px 0;
 }
 
-#productos .galeria{
-	margin: 20px;
-
-}
-	#productos .galeria figure div{
-		text-align: wrap;
-	}
-
-		#productos .galeria figure div img{
-			border-top-left-radius: 5px;
-			border-top-right-radius: 5px;
-		}
-
-		#productos .galeria  h5 p {
-			font-size: 2.5rem;
-			color: #37947E;
-			padding: 10px 0;
-			background-color: white;
-		}
-
-		#productos .galeria p.price{
-			color: #676565;
-			padding-bottom: 10px;
-			background-color: white;
-		}
-#productos .categorias figure{
-		display: inline-block;
-	background-color: transparent;
-			;
-	}
-#productos .categorias figure figcaption{
-	
-		color: whitesmoke;
-		text-align: center;
-		font-size: 2.5rem;
-			;} 
-
-	#productos .destacados article h3{
-		color: white;
-		font-size: 3rem;
-		padding-left: 50px;
-		font-family: Roboto, sans-serif;
-	}
-
-@media (min-width: 768px){
-	.contenedor{
-		grid-template-columns: 30vw 70vw;
-		grid-template-rows: repeat(4, auto);
-		grid-template-areas: 
-		"nav nav" 
-		"header header" 
-		"productos productos" 
-		"footer footer";
-	}
-
-	#productos .galeria{
-		display: flex;
-		flex-direction: column;
-		align-items: center;
-		justify-content: flex-start;
-	}
-	#productos .galeria figure{
-		width: 90%;
-		flex-direction:row;
-	}
-}
-@media (min-width: 1024px){
-	
-	.contenedor{
-		grid-template-columns: 20vw 70vw 10vw;
-		grid-template-rows: repeat(4, auto);
-		grid-template-areas: 
-		"nav  nav" 
-		"header header" 
-		"productos productos" 
-		"footer footer ";
-	}
-	
-	#productos .galeria figure{
-		width: 100%;
-	}
-	
+#productos .galeria {
+  margin: 20px;
 }
 
-@media (min-width: 1200px){
-	
-	#productos .galeria{
-		flex-direction: row;
-		justify-content: space-around;
-	}
-		#productos .galeria figure{
-			width: 100%;
-		}
-
+#productos .galeria div {
+  text-align: wrap;
 }
 
+#productos .galeria div img {
+  border-top-left-radius: 5px;
+  border-top-right-radius: 5px;
+}
 
+#productos .galeria h5 p {
+  font-size: 2.5rem;
+  color: #37947E;
+  padding: 10px 0;
+  background-color: white;
+}
+
+#productos .galeria p.price {
+  color: #676565;
+  padding-bottom: 10px;
+  background-color: white;
+}
+
+#productos .categorias {
+  display: inline-block;
+  background-color: transparent;
+  color: whitesmoke;
+  text-align: center;
+  font-size: 2.5rem;
+}
+
+#productos .destacados article h3 {
+  color: white;
+  font-size: 3rem;
+  padding-left: 50px;
+  font-family: Roboto, sans-serif;
+}
+
+@media (min-width: 768px) {
+  .contenedor {
+    grid-template-columns: 30vw 70vw;
+    grid-template-rows: repeat(4, auto);
+    grid-template-areas: "nav nav" "header header" "productos productos" "footer footer";
+  }
+  #productos .galeria {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+  }
+  #productos .galeria figure {
+    width: 90%;
+    flex-direction: row;
+  }
+}
+@media (min-width: 1024px) {
+  .contenedor {
+    grid-template-columns: 20vw 70vw 10vw;
+    grid-template-rows: repeat(4, auto);
+    grid-template-areas: "nav  nav" "header header" "productos productos" "footer footer ";
+  }
+  #productos .galeria figure {
+    width: 100%;
+  }
+}
+@media (min-width: 1200px) {
+  #productos .galeria {
+    flex-direction: row;
+    justify-content: space-around;
+  }
+  #productos .galeria figure {
+    width: 100%;
+  }
+}
+
+/*# sourceMappingURL=style.css.map */
