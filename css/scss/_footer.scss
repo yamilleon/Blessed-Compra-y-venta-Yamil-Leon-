@@ -1,0 +1,16 @@
+
+.pie{
+    background-color: $color;
+    padding: 30px;
+    font-family:$thirdFont ;
+    .pie__icon--sm{
+        width: 30px;
+        .pie__titulo--md{
+            h2{
+            font-size: 3rem;
+            text-decoration: none;
+             }
+       }
+
+    }
+}
