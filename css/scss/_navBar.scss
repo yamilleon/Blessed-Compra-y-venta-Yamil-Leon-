@@ -1,13 +1,11 @@
 
 .encabezado div{
     nav{
-        background-color: $secondaryColor;
+        @include repetidos(10px 30px,$blanco);
         position: sticky;
-        z-index: 1;
+        z-index: 2;
         top: 0;
-        padding: 10px 30px;
-        display: flex;
-        flex: justify-content end;
+        opacity: 0.9;
         ul{
             li{
                 display: inline;
@@ -15,9 +13,8 @@
                 margin-right: 20px;
                 a{
                     font-family:$thirdFont;
-                    font-size: 2.5rem;
-                    text-decoration: none;
-                    color: #A2A611;
+                    font-size: 2.9rem;
+                    color: map-get($map:$mapaDeColores , $key:$oscuro);
                     &:hover{
                         color: black;
                         font-weight: 600;
