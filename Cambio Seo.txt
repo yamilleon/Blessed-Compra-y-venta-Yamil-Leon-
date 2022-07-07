@@ -1,0 +1,7 @@
+Puse las respectivas descripciones 
+implemente los titulos diferentes en todos los html(exeptuando el de error404)
+Puse las despriciones y los textos alternativos a las card y imagenes
+implemente el error404 
+trate de migrar mis imagenes a svg y webp
+use las meta key(hice copypaste pensando que no son importanes pero si es necesario la cambio)
+use el meta autor y lo puse en todas la paginas.

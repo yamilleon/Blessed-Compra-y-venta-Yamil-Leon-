@@ -1,13 +1,13 @@
 @import url("https://fonts.googleapis.com/css2?family=Great+Vibes&family=Koulen&family=Marck+Script&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Rubik+Glitch&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Great+Vibes&family=Koulen&family=Marck+Script&display=swap");
 .encabezado div nav {
-  background-color: rgb(48, 89, 199);
-  position: sticky;
-  z-index: 1;
-  top: 0;
+  background-color: #f7f7f7;
   padding: 10px 30px;
-  display: flex;
-  flex: justify-content end;
+  position: sticky;
+  z-index: 2;
+  top: 0;
+  opacity: 0.9;
 }
 .encabezado div nav ul li {
   display: inline;
@@ -16,9 +16,8 @@
 }
 .encabezado div nav ul li a {
   font-family: "Great Vibes", cursive;
-  font-size: 2.5rem;
-  text-decoration: none;
-  color: #A2A611;
+  font-size: 2.9rem;
+  color: rgba(8, 8, 8, 0.938);
 }
 .encabezado div nav ul li a:hover {
   color: black;
@@ -26,16 +25,69 @@
 }
 
 .pie {
-  background-color: rgb(37, 78, 133);
+  background-color: #f7f7f7;
   padding: 30px;
   font-family: "Great Vibes", cursive;
 }
-.pie .pie__icon--sm {
-  width: 30px;
+.pie .pie__titulo--md {
+  text-align: center;
 }
-.pie .pie__icon--sm .pie__titulo--md h2 {
+.pie .pie__titulo--md h2 {
   font-size: 3rem;
   text-decoration: none;
+}
+
+.boton, .boton2 {
+  cursor: pointer;
+  border: 3px solid;
+  border-radius: 25px;
+  background-color: black;
+  text-align: center;
+  text-decoration: none;
+}
+.boton a, .boton2 a {
+  color: whitesmoke;
+  text-decoration: none;
+  font-size: 1rem;
+}
+
+#productos .galeria {
+  margin: 20px;
+}
+
+.boton2 {
+  padding: 5px 5px;
+  margin: auto;
+  color: white;
+  text-align: center;
+  font-family: "Great Vibes", cursive;
+}
+
+.pie {
+  background-color: #f7f7f7;
+  padding: 30px;
+  font-family: "Great Vibes", cursive;
+}
+.pie .pie__titulo--md {
+  text-align: center;
+}
+.pie .pie__titulo--md h2 {
+  font-size: 3rem;
+  text-decoration: none;
+}
+
+.boton, .boton2 {
+  cursor: pointer;
+  border: 3px solid;
+  border-radius: 25px;
+  background-color: black;
+  text-align: center;
+  text-decoration: none;
+}
+.boton a, .boton2 a {
+  color: whitesmoke;
+  text-decoration: none;
+  font-size: 1rem;
 }
 
 * {
@@ -48,15 +100,163 @@ html {
 }
 
 body {
-  background-image: url("../Yamil/Fondo/Fondo.png");
+  background-image: url("../Yamil/Fondo/Fondo.svg");
   background-position: center;
-  background-repeat: no-repeat;
+  background-repeat: repeat;
   background-attachment: fixed;
 }
 
-h1, h2 {
-  color: rgb(16, 22, 53);
-  font-family: "Marck Script", cursive;
+h1 {
+  font-family: "Great Vibes", cursive;
+  font-size: 3rem;
+  text-align: center;
+  padding: 20px 20px;
+  color: rgb(255, 255, 255);
+  margin: 20px 20px;
+  flex-direction: initial;
+  background-color: black;
+}
+
+.boton, .boton2 {
+  cursor: pointer;
+  border: 3px solid;
+  border-radius: 25px;
+  background-color: black;
+  text-align: center;
+  text-decoration: none;
+}
+.boton a, .boton2 a {
+  color: whitesmoke;
+  text-decoration: none;
+  font-size: 1rem;
+}
+
+.boton2 {
+  padding: 5px 5px;
+  margin: auto;
+  color: white;
+  text-align: center;
+  font-family: "Great Vibes", cursive;
+}
+
+.formDeb5 {
+  background-color: lightgrey;
+  border-radius: 25px;
+  padding: 32px 28px;
+  margin: 124px 10px;
+  font-family: monospace;
+  color: cornsilk;
+}
+.formDeb5 legend {
+  color: black;
+  position: relative;
+  font-family: monospace;
+  color: gray;
+}
+
+.localFig img {
+  object-fit: cover;
+}
+
+h2 {
+  font-size: 3rem;
+  text-align: center;
+  padding: 20px 20px;
+  color: rgb(255, 255, 255);
+  margin: 20px 20px;
+  flex-direction: initial;
+  background-color: black;
+  font-family: "Great Vibes", cursive;
+  z-index: 1;
+  opacity: 0, 5;
+}
+
+iframe {
+  width: 100%;
+}
+
+.figurasCategoria {
+  display: flex;
+  cursor: pointer;
+  border: 3px solid;
+  border-radius: 25px;
+  text-align: center;
+  text-decoration: none;
+  padding: 30px;
+  margin: 50px;
+}
+
+.promo {
+  padding-top: 350px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 60%;
+  margin: auto;
+  position: relative;
+  z-index: 2;
+}
+
+.promo p {
+  font-size: 2.5rem;
+  text-align: center;
+  color: green;
+  font-weight: 900;
+  font-family: "Rubik Glitch", cursive;
+}
+
+button {
+  display: inline-block;
+  border: none;
+  height: 50px;
+  border-radius: 30px;
+  padding: 10px 0;
+  width: 200px;
+  background-color: green;
+  font-size: 1.8rem;
+  color: black;
+  font-weight: 800;
+  transition: 150ms;
+  margin-top: 40px;
+  font-family: "Rubik Glitch", cursive;
+}
+button a {
+  text-decoration: none;
+  color: black;
+}
+
+button:focus {
+  outline: none;
+}
+
+button:hover {
+  transform: translate(0, -5px);
+}
+
+#hero {
+  min-height: 100vh;
+  position: relative;
+}
+
+video {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.capa {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: #1c1c1d;
+  opacity: 0.5;
+  mix-blend-mode: overlay;
 }
 
 .contenedor {
@@ -76,58 +276,6 @@ h1, h2 {
 
 #footer {
   grid-area: footer;
-}
-
-#productos h1,
-#productos h2 {
-  text-transform: uppercase;
-  font-size: 3rem;
-  text-align: center;
-  padding: 20px 0;
-  background-color: rgb(204, 187, 30);
-  font-family: "Koulen", cursive;
-  margin: 20px 0;
-}
-
-#productos .galeria {
-  margin: 20px;
-}
-
-#productos .galeria div {
-  text-align: wrap;
-}
-
-#productos .galeria div img {
-  border-top-left-radius: 5px;
-  border-top-right-radius: 5px;
-}
-
-#productos .galeria h5 p {
-  font-size: 2.5rem;
-  color: #37947E;
-  padding: 10px 0;
-  background-color: white;
-}
-
-#productos .galeria p.price {
-  color: #676565;
-  padding-bottom: 10px;
-  background-color: white;
-}
-
-#productos .categorias {
-  display: inline-block;
-  background-color: transparent;
-  color: whitesmoke;
-  text-align: center;
-  font-size: 2.5rem;
-}
-
-#productos .destacados article h3 {
-  color: white;
-  font-size: 3rem;
-  padding-left: 50px;
-  font-family: Roboto, sans-serif;
 }
 
 @media (min-width: 768px) {
